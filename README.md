@@ -3,9 +3,7 @@
 ![image](https://user-images.githubusercontent.com/79068208/156099352-be17a6a1-64d3-428c-a4fd-ca65de19719e.png)
 
 
-My OpenCore EFI folder for Hackintosh-ing.
-
-NOTE: Go visit the [Wiki](https://github.com/TheNewEraBrad/Dell-Inspiron-14-5490-OpenCore/wiki) before doing anything in this repo.
+An updated fork of the original EFI folder.
 
 Update: i'll be maintaining this per request of the owner, so you should head here for updated versions.
 

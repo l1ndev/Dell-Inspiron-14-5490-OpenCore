@@ -7,7 +7,7 @@ My OpenCore EFI folder for Hackintosh-ing.
 
 NOTE: Go visit the [Wiki](https://github.com/TheNewEraBrad/Dell-Inspiron-14-5490-OpenCore/wiki) before doing anything in this repo.
 
-Update: Nowadays, I have quit the hackintosh scene and ~installed [Gentoo GNU/Linux](https://gentoo.org)~ bought a real MacBook. I probably won't be updating this anymore.
+Update: i'll be maintaining this per request of the owner, so you should head here for updated versions.
 
 My specs:  
 Intel Core i5-10210U @ 1.60 GHz.  

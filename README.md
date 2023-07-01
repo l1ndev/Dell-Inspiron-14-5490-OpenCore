@@ -8,11 +8,9 @@ An updated fork of the original EFI folder.
 Update: i'll be maintaining this per request of the owner, so you should head here for updated versions.
 
 My specs:  
-Intel Core i5-10210U @ 1.60 GHz.  
-~8GB DDR4-2667 SODIMM RAM (4GB soldered, 4GB additional)~  
+Intel Core i5-10210U @ 1.60 GHz.   
 20GB DDR4-2667 SODIMM RAM (4GB soldered, 16GB additional).  
-~IM2P33F3 NVMe ADATA 256GB SSD~  
-Patriot P300 NVMe (512GB) ~(Doesn't seem to boot with macOS).~ See fixed section.  
+Patriot P300 NVMe (512GB)
 Intel UHD Graphics 620 (0x9b41) (spoofed to 0x3e9b).  
 NVIDIA GeForce MX 230 (Disabled via `-wegnoegpu`).  
 Fenvi BCM94360NG Wireless card (802.11ac).  
@@ -42,18 +40,17 @@ Displayport via USB-C (disabled in config.plist)
 Security lock  
 
 Partially working:  
-~Sidecar (Connects 50% of the time)~
- See Fixed section.  
+Fingerprint sensor (not working in macOS, use VMware Fusion with USB passthrough on Windows)
 
 Not working:  
 Microphone (Intel SST)  
 Headphone jack input (Realtek issue)  
 Disable NVIDIA GPU with SSDT (Freezes 10 seconds after login)  
 Trackpad with SSDT-GPI0 (Trackpad OS Checking) SSDT-XOSI works fine though.  
-Fingerprint (Appears after USB Map but doesn't work in macOS, can be passed through to VMware Windows VM)  
 Windows Dual-boot (SSDT-XOSI conflict)
 
-Note: The serial number in `Platforminfo > Generic` is blanked out. You can generate a serial with [GenSMBIOS.](https://github.com/corpnewt/GenSMBIOS)  
-Other note: USB Map Kext is removed because some variants of this laptop have different USB configurations.  
-Other other note: My BIOS revision is ~1.16.1~ **1.17**, so please update to the latest Dell BIOS before proceeding.  
-Last note I swear: My CFG Lock is disabled using [Dortania's method](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) so if your CFG Lock is still enabled, enable `AppleXcpmCfgLock` in `Kernel > Quirks`. (ControlMSRE2 reports CFG lock enabled, idk why).  
+Notes:  
+The serial number in `Platforminfo > Generic` is blanked out. You can generate a serial with [GenSMBIOS.](https://github.com/corpnewt/GenSMBIOS)  
+USB Map Kext is removed because some variants of this laptop have different USB configurations.  
+My BIOS revision is 1.17, so please update to the latest Dell BIOS before proceeding.  
+My CFG Lock is disabled using [Dortania's method](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) so if your CFG Lock is still enabled, enable `AppleXcpmCfgLock` in `Kernel > Quirks`. (ControlMSRE2 reports CFG lock enabled, idk why).  
